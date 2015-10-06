@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js" 
+    id="sap-ui-bootstrap" 
+    data-sap-ui-theme="sap_bluecrystal" 
+    data-sap-ui-libs="sap.m, sap.ui.commons, sap.ui.table">
+    </script>
+    <script>
+        sap.ui.localResources("main");
+        var aData = [];
+       	var app = new sap.m.App({initialPage:"idinicio1"});
+		var page = sap.ui.view({id:"idinicio1", viewName:"main.main", type:sap.ui.core.mvc.ViewType.JS});
+			
+		app.addPage(page);
+
+        app.placeAt("content");
+    </script>
+    <meta charset="utf-8">
+    <title>SAPUI5 CRUD Model</title>
+</head>
+
+<body class="sapUiBody" role="application">
+    <div id="content"></div>
+</body>
+
+</html>
